@@ -30,7 +30,7 @@ li{
 }
 
 li:hover{
-    background-color: #0CC0DF;
+    background-color: rgb(12,192,223);
     transform: scale(1.2);
 }
 
@@ -43,3 +43,10 @@ a{
     text-decoration: none;
     font: 100% Roboto;
 }
+
+.fa-user, .fa-cart-shopping, .fa-circle-info, .fa-leanpub, 
+.fa-newspaper, .fa-right-to-bracket{
+    font-size: 25px;
+    color: rgb(126,217,87);
+}
+
