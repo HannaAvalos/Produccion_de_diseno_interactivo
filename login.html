@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="https://kit.fontawesome.com/da9350b696.js" crossorigin="anonymous"></script>
+        <title>Log In</title>
+    </head>
+    <body>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li  class="noStyle"><a href="#"><img src="./img/Logo Sin.png" alt=""></a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-info"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-leanpub"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-newspaper"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li class="noStyle"><a href="registro.html"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+    
+                 </nav>
+            </header>
+        
+        <div id="myHeader"></div>
+
+
+            <div id="initialContent">
+
+                <form action="#">
+                    <div>Inicio de Sesión</div>
+
+
+                    <!--Email-->
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+
+                    <!--Contraseña-->
+                    <label for="login-contraseña">Contraseña:</label>
+                    <input type="password" id="login-contraseña" name="contraseña" required>
+
+                    <!--Botón de Iniciar Sesión-->
+                    <input type="submit" value="Iniciar Sesión">
+
+                    <!--Link olvidé contraseña-->
+                    <div class="link-redireccion">
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+
+                    <!--Link Regístrate-->
+                    <div class="link-redireccion">
+                        <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+                    </div> 
+                </form>
+
+            </div>
+
+
+            <script>
+                $(document).ready(function(){
+                    //Cargar cont encabezado
+                    $.get(".header.html", function(data){
+                        //Incertar el encabezado antes del contenido original
+                        $(#initialContent).before(data);
+                    });
+                });
+            </script>
+
+
+<footer class="PiePagina">
+    <div class="Grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/Logo Horizontal.png" alt="Logo Wise Learning"></a>
+            </figure>
+        </div>
+        <div class="box">
+            <H2>SIGUENOS</H2>
+            <div class="redSocial">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="Grupo2">
+        <small>&copy; 2023 <b>Wise Learning</b>- Todos los Derechos Reservados</small>
+
+    </div>
+</footer>
+
+    </body>
+    </html>
